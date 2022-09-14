@@ -76,7 +76,7 @@ add1table:{[dbdir;tablename;table]
  @[tablename;`;:;.Q.en[dbdir]0#table];}
 
 stdout:{-1 raze[" "sv string`date`second$.z.P]," ",x;}
-validcolname:{(not x in `i,.Q.res,key`.q)and x = .Q.id x}
+validcolname:{[x](not x in `i,.Q.res,key`.q)and x = .Q.id x}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // * public
