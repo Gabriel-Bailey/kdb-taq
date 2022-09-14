@@ -8,6 +8,7 @@ ren:{system$[WIN;"move ";"mv "],pth[x]," ",pth y}
 here:{hsym`$system$[WIN;"cd";"pwd"]}
 \d .
 
+/These are helper functions for the full ones below
 add1col:{[tabledir;colname;defaultvalue]
  if[not colname in ac:allcols tabledir;
   stdout"adding column ",(string colname)," (type ",(string type defaultvalue),") to `",string tabledir;
